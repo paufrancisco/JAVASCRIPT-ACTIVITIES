@@ -15,7 +15,7 @@ enter.addEventListener("click", () => {
   try {
     const result = eval(expression);
     display.innerText = result;
-    expression = result.toString(); // continue from result
+    expression = result.toString(); 
   } catch (err) {
     display.innerText = "Error";
     expression = "";
