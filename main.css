@@ -1,0 +1,24 @@
+#box {
+    background-color: rgba(128, 128, 226, 0.589);
+    border-radius: 20px;
+    border: 10ppx;
+    min-height: 80vh;
+    padding: 1vh;
+    min-width: 50vh;
+    margin: 10vh 20vh 10vh 20vh;
+}
+
+#numbers{
+    display: flexbox;
+    margin: 5px;
+}
+
+button {
+    width: 12vh;
+    height: 10vh;
+    margin: 10px;
+}
+
+#plus {
+    height: 20vh;
+}
