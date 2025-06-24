@@ -1,8 +1,29 @@
- let rootDiv = document.getElementById("root").textContent="asdasd";
+document.addEventListener("DOMContentLoaded", ()=>{
+  let rootDiv = document.getElementById("root");
+  const testSpan = document.getElementsByClassName('test-span');
 
 
- rootDiv.addEventListener("click", ()=>{
-  rootDiv = "change text";
-  console.log(rootDiv);
- });
+  console.log("rootDiv", rootDiv);
+  console.log("testSpan", testSpan);
+});
 
+
+document.addEventListener("DOMContentLoaded",()=>{
+  let rootDiv = document.getElementById("root");
+  const testSpan = document.getElementsByClassName('test-span');
+
+
+  console.log("rootDiv", rootDiv);
+  console.log("testSpan", testSpan);
+});
+
+document.addEventListener("DOMContentLoaded",()=>{
+  let rootDiv = document.getElementById("root");
+  const testSpan = document.getElementsByClassName('test-span');
+
+
+  console.log("rootDiv", rootDiv);
+  console.log("testSpan", testSpan);
+});
+
+console.log(document)
