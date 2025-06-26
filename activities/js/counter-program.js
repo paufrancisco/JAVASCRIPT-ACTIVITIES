@@ -1,17 +1,16 @@
 let result = document.getElementById('result');
-
+let count = 0;
 document.getElementById('btn-dec').onclick = function(){
-    if(result.textContent!=0){
-        result.textContent -= 1;
-    } 
+    count--;
+    result.textContent = count;
 }
 
 document.getElementById('btn-inc').onclick = function(){
-    let converted = Number(result.textContent); 
-    converted +=1;
-    result.textContent = converted;
+    count++;
+    result.textContent = count;
 }
 
 document.getElementById('btn-reset').onclick = function(){
-    result.textContent = 8;
+    count = 0;
+    result.textContent = count;
 }
