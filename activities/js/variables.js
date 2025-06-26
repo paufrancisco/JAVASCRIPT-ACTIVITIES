@@ -1,13 +1,13 @@
 let x;
 x = 123;
 
-let price = 99;
-let age = 25;
+let price = 99; 
 let firstName = "Paulo"
 let lastName = "Francisco"
 let email = "Bro@gmail.com"
 let online = true;
 
+let age = 25;
 console.log(x);
 console.log(price);
 console.log(age);
@@ -23,3 +23,11 @@ if(age>18){
 }else{
     console.log("Not approved");
 }
+
+
+let fullName = 'Paulo Francisco'
+let isStudent = false;
+
+document.getElementById('p1').textContent = fullName;
+document.getElementById('p2').textContent = `You are ${age} years old`;
+document.getElementById('p3').textContent = isStudent;
