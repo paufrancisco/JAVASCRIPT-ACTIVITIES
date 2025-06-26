@@ -1,10 +1,13 @@
-
-
-let age = 25;
-let underAge = 18;
-
-if(underAge>18){
-    console.log("Legal Age");
-}else{
-    console.log("You must be 18 to enter this site");
+let button = document.getElementById('btn-submit');
+button.onclick = function(){
+    let age = document.getElementById('myText'); 
+    
+    let result = document.getElementById('result');
+    age = age.value;
+    if(age>=18){
+        result.textContent = "Access approved";
+    }else{
+         result.textContent = "Access denied";
+    }
 }
+
