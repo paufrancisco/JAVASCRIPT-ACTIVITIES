@@ -1,0 +1,58 @@
+#container {
+    display: grid;
+    grid-template-rows: auto auto;  
+    row-gap: 1rem;
+    width: 300px; 
+    margin: auto;
+    text-align: center;
+}
+
+#result {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 100px;
+}
+
+.button {
+    padding: 10px;
+    font-size: 1rem; 
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+#container > button {
+    display: inline-block;
+}
+
+/* Put the 3 buttons in a 3-column subgrid */
+#container {
+    grid-template-areas: 
+    "result result result" 
+    "btn1 btn2 btn3";
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+}
+
+#result {
+    grid-area: result;
+}
+
+#btn-dec {
+    grid-area: btn1;
+}
+#btn-reset {
+    grid-area: btn2;
+}
+#btn-inc {
+    grid-area: btn3;
+}
+
+.button:hover{
+    transition: 0.2s;
+    background-color: violet;
+    color: black;
+    transform: scale(1.1);
+}
