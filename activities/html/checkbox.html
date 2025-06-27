@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkbox</title>
+        <style>
+            button{
+                width: 100px;
+                height: 50px;
+                font-size: 1.5rem;
+                border-radius: 15px;
+                border: none;
+                background-color: rgba(255, 99, 71, 0.342);
+                box-shadow: 2px 2px 5px black;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            button:hover{
+                transform: scale(1.12);
+                background-color: tomato;
+            } 
+            label{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                 
+            }
+            
+        </style>
+    </head>
+    <body>
+        <input type="checkbox" id="myCheckbox">
+        <label for="myCheckbox">Subscribe</label>
+        <br>
+        <input type="radio" id="visaBtn" name="payment-method">
+        <label for="visaBtn">Visa</label>
+        <br>
+        <input type="radio" id="masterBtn" name="payment-method">
+        <label for="masterBtn">Mastercard</label>
+        <br>
+        <input type="radio" id="paypalBtn" name="payment-method">
+        <label for="paypalBtn">Paypal</label>
+        <br> 
+        <button type="submit" id="mySubmit">
+            Submit
+        </button>
+
+        <p id="subResult"></p>
+        <p id="paymentResult"></p>
+    </body>
+    <script src="../js/checkbox.js"></script>
+</html>
