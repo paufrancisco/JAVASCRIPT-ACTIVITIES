@@ -10,21 +10,21 @@ let splitThirdName = split[2];
 let splitFourthName = split[3];
 let splitFifthName = split[4];
 
-console.log(fullName);
-console.log(firstName);
-console.log(lastF);
-console.log(lastName);
+// console.log(fullName);
+// console.log(firstName);
+// console.log(lastF);
+// console.log(lastName);
 
 
-console.log(splitFirstName);
-console.log(splitSecondName);
-console.log(splitThirdName);
-console.log(splitFourthName);
-console.log(splitFifthName);
+// console.log(splitFirstName);
+// console.log(splitSecondName);
+// console.log(splitThirdName);
+// console.log(splitFourthName);
+// console.log(splitFifthName);
 
 
 
-const email = "email@gmail.com"
+const email = "francisco@gmail.com"
 const sliceEmail = email.slice(0, email.indexOf("@"));
 const typeOfEmail = email.slice(email.indexOf("@")+1, email.indexOf("."));
 
