@@ -1,7 +1,7 @@
 const fullName = "Paulo Faustiniel Angelo L. Francisco";
 
-let firstName = fullName.slice(0,5);
-let lastName = fullName.slice(27,fullName.length);
+let firstName = fullName.slice(0, 5);
+let lastName = fullName.slice(27, fullName.length);
 let lastF = fullName.lastIndexOf("F");
 let split = fullName.split(" ");
 let splitFirstName = split[0];
@@ -21,3 +21,12 @@ console.log(splitSecondName);
 console.log(splitThirdName);
 console.log(splitFourthName);
 console.log(splitFifthName);
+
+
+
+const email = "email@gmail.com"
+const sliceEmail = email.slice(0, email.indexOf("@"));
+const typeOfEmail = email.slice(email.indexOf("@")+1, email.indexOf("."));
+
+console.log(sliceEmail);
+console.log(typeOfEmail);
