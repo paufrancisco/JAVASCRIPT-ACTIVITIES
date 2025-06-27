@@ -28,24 +28,25 @@
         </style>
     </head>
     <body>
-        <input type="checkbox" id="myCheckbox">
-        <label for="myCheckbox">Subscribe</label>
+        <input type="checkbox" id="agree">
+        <label for="agree">Agree to terms and condition</label>
         <br>
-        <input type="radio" id="visaBtn" name="payment-method">
-        <label for="visaBtn">Visa</label>
+        <input type="radio" id="small-btn" name="size">
+        <label for="small-btn">Small</label>
         <br>
-        <input type="radio" id="masterBtn" name="payment-method">
-        <label for="masterBtn">Mastercard</label>
+        <input type="radio" id="medium-btn" name="size">
+        <label for="medium-btn">Medium</label>
         <br>
-        <input type="radio" id="paypalBtn" name="payment-method">
-        <label for="paypalBtn">Paypal</label>
-        <br> 
-        <button type="submit" id="mySubmit">
-            Submit
-        </button>
+        <input type="radio" id="large-btn" name="size">
+        <label for="large-btn">Large</label>
+        <br>
 
-        <p id="subResult"></p>
-        <p id="paymentResult"></p>
+        <button id="submit">Submit</button>
+
+        <p id="submit-res">The result is here</p>
+        <p id="size-res">The size result is here</p>
+ 
+
     </body>
     <script src="../js/checkbox.js"></script>
 </html>

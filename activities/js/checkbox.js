@@ -1,29 +1,34 @@
-const checkbox = document.getElementById('myCheckbox');
-const visa = document.getElementById('visaBtn');
-const mastercard = document.getElementById('masterBtn');
-const paypal = document.getElementById('paypalBtn');
+const agree = document.getElementById('agree');
 
-const btnSubmit = document.getElementById('mySubmit');
+const small = document.getElementById('small-btn');
+const medium = document.getElementById('medium-btn');
+const large = document.getElementById('large-btn');
 
-const subResult = document.getElementById('subResult');
-const paymentResult = document.getElementById('paymentResult');
+const submit = document.getElementById('submit');
+
+const subResult = document.getElementById('submit-res');
+const sizeResult = document.getElementById('size-res');
 
 
-btnSubmit.onclick = function(){
-    if(checkbox.checked){
-        subResult.textContent = `You are subscribed!`;
+
+submit.onclick = function(){
+
+    if(agree.checked){
+        subResult.textContent = `You are agree in terms and condition`; 
     }else{
-        subResult.textContent = `You are not subscribed!`; 
-    } 
-    
-    if (visa.checked) {
-        paymentResult.textContent = `You are paying with Visa`;
-    } else if (mastercard.checked) {
-        paymentResult.textContent = `You are paying with MasterCard`;
-    } else if (paypal.checked) {
-        paymentResult.textContent = `You are paying with PayPal`;
-    } else{
-        paymentResult.textContent = `Please select payment type`;
+        subResult.textContent = `Please check in agree in terms and condition`;
     }
-      
+
+    if(small.checked){
+        sizeResult.textContent = `You select Small`;
+    }
+    else if(medium.checked){
+        sizeResult.textContent = `You select Medium`;
+    }
+    else if(large.checked){
+        sizeResult.textContent = `You select Large`;
+    }else{
+        sizeResult.textContent = `Please select size`;
+    }
+     
 }
