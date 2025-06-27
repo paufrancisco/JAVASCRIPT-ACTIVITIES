@@ -13,11 +13,15 @@ const sizeResult = document.getElementById('size-res');
 
 submit.onclick = function(){
 
-    if(agree.checked){
-        subResult.textContent = `You are agree in terms and condition`; 
-    }else{
-        subResult.textContent = `Please check in agree in terms and condition`;
-    }
+
+    agree.checked ? subResult.textContent = `You are agree in terms and condition`  :  subResult.textContent = `Please check in agree in terms`;
+
+ 
+    // if(agree.checked){
+    //     subResult.textContent = `You are agree in terms and condition`; 
+    // }else{
+    //     subResult.textContent = `Please check in agree in terms and condition`;
+    // }
 
     if(small.checked){
         sizeResult.textContent = `You select Small`;
