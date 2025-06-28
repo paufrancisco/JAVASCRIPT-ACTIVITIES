@@ -18,3 +18,12 @@ for(let i = 0; i<sample.length; i++){
 }
 
 console.log(`Final max: ${max}`);
+
+let username = "Paulonism";
+
+for(let i in username){
+    console.log(username[i]);
+}
+
+let good = [...username];
+console.log(good, `type is ${typeof good}`, typeof username);
