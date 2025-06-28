@@ -20,3 +20,13 @@ function sum(...numbers){
 
 let numbers = sum(1,2,3,4,54);
 console.log(`The total is ${numbers}`);
+
+function average(...numbers){
+    let average = 0;
+    for(let i of numbers){
+        average+=i;
+    }
+    return average/numbers.length;
+}
+let grades = average(93,98,87,87,98);
+console.log(grades);
