@@ -1,15 +1,31 @@
-let attempts = 0
-let guess;
-let running = true;
+const guess = document.getElementById('input-guess');
+const submit = document.getElementById('btn-submit');
 
-while(running){
+const displayAttempt = document.getElementById('attempt'); 
+let attempts = 0;
+minNum = 1;
+maxNum = 100;
+    
+let answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
 
-    const minNum = 1;
-    const maxNum = 4;
-    const answer = Math.floor(Math.random()*(maxNum-minNum)+1);
-    if(answer === 3){
-        running = false;
-    }
-    attempts++;
-    console.log(`Attempts: `,attempts,`Answer: `,answer); 
+submit.onclick = function(){
+
+   
+    let enteredGuess = Number(guess.value);
+    console.log(answer);
+
+    const result = document.getElementById('res');
+    if(enteredGuess == answer ){
+          result.textContent = `Congrats you get the right number ${answer}`;  
+    }else if(answer > enteredGuess){
+        result.textContent = `Number is higher`;
+        attempts++;
+    }else if(answer < enteredGuess){
+        result.textContent = `Number is lower`;
+        attempts++;
+    } 
+    console.log(typeof enteredGuess);
+    console.log(answer);
+    console.log(`Attempts`,attempts);
+    displayAttempt.textContent = `No. of attempts: ${attempts}`;
 }
