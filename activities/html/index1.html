@@ -4,14 +4,65 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Function</title>
+        <style>
+            h1 h2{
+                color: rgba(52, 52, 189, 0.733);
+                font-family: Verdana;
+                font-size: 1rem; 
+                margin-top: 10px;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+            }
+            div{ 
+                margin: 5px; 
+                padding-top: 20px; 
+                padding-inline: 30px;
+                justify-content: center;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
+                background-color: rgba(255, 255, 255, 0.247);
+            }
+            #input-temp{
+                width: 100px;
+                height: 20px;
+                font-size: 1.5rem;
+                text-align: center; 
+            }
+            button{
+                background-color: red;
+                color: white;
+                margin: 10px;
+                border: none;
+                border-radius: 5px;
+                padding: 5px;
+                width: 60px;
+                cursor: pointer;
+            }
+        </style>
+
     </head>
+
+
     <body>
-        
-
-
-
-
-        
+        <div>
+            <h1>
+                Temperature <br>conversion: 
+            </h1>
+            <input type="text" id="input-temp">
+            <br> 
+            <input type="radio" id="cel-to-fah" name="method" value="cel-to-fah">
+            <label for="cel-to-fah">Celcius to Fahrenheit</label>
+            <br>
+            <input type="radio" id="fah-to-cel" name="method" value="fah-to-cel">
+            <label for="fah-to-cel">Fahrenheit to Celcius</label>
+            <br>
+            <button id="btn-submit">Submit</button>
+            <h2 id="result">Result</h2> 
+        </div>
+       
     </body>
-    <script src="../js/variable-scope.js"></script>
+    <script src="../js/temp-converter.js"></script>
 </html>

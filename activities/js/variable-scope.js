@@ -9,5 +9,7 @@ function function2() {
     let x = 2;
     console.log(x);
 }
+
+
 function1();
 function2();
