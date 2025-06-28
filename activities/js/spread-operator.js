@@ -25,5 +25,5 @@ for(let i in username){
     console.log(username[i]);
 }
 
-let good = [...username];
+let good = [...username, ...sample];
 console.log(good, `type is ${typeof good}`, typeof username);
