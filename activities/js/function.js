@@ -41,12 +41,10 @@ function isValidEmail(email){
 }
 
 
-let sumWithkeme = getTheSum(grades);
-
-console.log(`Grades with keme: ${sumWithkeme}`);
 
 
 getTheSum(grades); 
+console.log(`The sum: ${sum}`);
 
 happybirthday(name,age);
 
