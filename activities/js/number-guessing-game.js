@@ -7,7 +7,7 @@ minNum = 1;
 maxNum = 100;
     
 let answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
-
+console.log(answer);
 submit.onclick = function(){
 
    
@@ -27,5 +27,5 @@ submit.onclick = function(){
     console.log(typeof enteredGuess);
     console.log(answer);
     console.log(`Attempts`,attempts);
-    displayAttempt.textContent = `No. of attempts: ${attempts}`;
+    displayAttempt.textContent = `No. of failed attempts: ${attempts}`;
 }
