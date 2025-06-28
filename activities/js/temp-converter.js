@@ -10,18 +10,16 @@ btnSubmit.onclick = function(){
     console.log(`Input temp: ${temp}`);
 
     let resultTemp;
-    let methodUsed = "";
-    let cel = "cel-to-fah";
-    let fah = "fah-to-cel";
+    let methodUsed = ""; 
     let celfah = document.getElementById('cel-to-fah'); 
     let fahcel = document.getElementById('fah-to-cel'); 
 
     if(celfah.checked){
         resultTemp = ((9/5)*temp)+32;
-        methodUsed = cel;
+        methodUsed = celfah.checked;
     }else if (fahcel.checked){
         resultTemp = (temp-32)*5/9;
-        methodUsed = fah;
+        methodUsed = fahcel.checked;
     }else{
         `Please choose method of conversion`;
     }
