@@ -30,7 +30,9 @@ displayFruits(withLabel);
 
 
 function addSomething(element){
-    return "Fruits: " + element;
+    if(element%2==0){
+        return "Fruits: " + element;
+    } 
 }
 
 function displayFruits(element){
