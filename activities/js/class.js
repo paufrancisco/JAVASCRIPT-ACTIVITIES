@@ -55,12 +55,12 @@ const student = new Student(
 );
 
 
-student.displayStudentInfo();
-
- 
-
 const salesTax = 0.05;
+
 const product = new Product("Mikmik",12,200); 
-let total = product.calculateTotal();
+const total = product.calculateTotal();
+
+student.displayStudentInfo();
 product.displayProduct();
+
 console.log(total);
