@@ -47,6 +47,5 @@ function getMin(accumulator, element){
     return Math.min(accumulator, element);
 }
 
- 
 console.log(maximum);   
 console.log(minimum);   
