@@ -1,5 +1,3 @@
-
-
 function hello(callback){
     console.log("Hello!");
     callback();
