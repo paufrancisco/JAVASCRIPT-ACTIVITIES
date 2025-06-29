@@ -13,3 +13,13 @@ function isOdd(element){
 console.log(even);
 console.log(odd);
  
+
+const words = ["apple", "orange", "bananas", "coconut", "123456"];
+const sixLetter = words.filter(filter6words);
+
+function filter6words(element){
+    return element.length < 6 ? true : false;
+}
+
+
+console.log(sixLetter);
