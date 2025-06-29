@@ -15,9 +15,15 @@ function double(element, index, array){
 function upperCase(element, index, array){
     array[index] = element.toUpperCase();
 }
+function lowerCase(element, index, array){
+    array[index] = element.toLowerCase();
+}
+function sentenceCase(element, index, array){
+    array[index] = element[0].toUpperCase() + element.slice(1);
+}
 
 // fruits
-fruits.forEach(upperCase);
+fruits.forEach(sentenceCase);
 fruits.forEach(display);
 // number
 numbers.forEach(double);
