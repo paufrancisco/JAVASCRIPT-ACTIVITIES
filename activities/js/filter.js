@@ -23,3 +23,7 @@ function filter6words(element){
 
 
 console.log(sixLetter);
+
+const prices = [213.45,23,423];
+
+
