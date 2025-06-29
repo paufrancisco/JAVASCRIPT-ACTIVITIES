@@ -12,6 +12,13 @@ function double(element, index, array){
     array[index] = element * 2;
 }
 
+function upperCase(element, index, array){
+    array[index] = element.toUpperCase();
+}
 
+// fruits
+fruits.forEach(upperCase);
+fruits.forEach(display);
+// number
 numbers.forEach(double);
 numbers.forEach(display);
