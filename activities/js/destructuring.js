@@ -18,8 +18,8 @@ console.log(secondColor);
 console.log(thirdColor);
 
 
-function displayProfile({name, age}){
-    console.log(`name: ${name} age: ${age}`); 
+function displayProfile({name, age, mema="asd"}){
+    console.log(`name: ${name} age: ${age} mema: ${mema}`); 
 } 
 
 const person1 = {
@@ -32,4 +32,4 @@ const {age} = person1;
 console.log(name);
 console.log(age);
 
-displayProfile(person1);
+displayProfile(person1); 
