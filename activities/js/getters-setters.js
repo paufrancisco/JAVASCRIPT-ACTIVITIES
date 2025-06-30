@@ -41,9 +41,7 @@ const rectangle = new Rectangle();
 rectangle.width = -12;
 rectangle.height = 3;
 
-
-
-
+ 
 rectangle.getArea();
 rectangle.getPerimeter();
 
