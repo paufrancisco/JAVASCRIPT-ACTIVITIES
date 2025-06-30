@@ -37,8 +37,8 @@
 
 const fruits = document.querySelectorAll("li");
 
-fruits.forEach(foods =>{
-    foods.style.backgroundColor = "yellow";
+fruits.forEach(fruits =>{
+    fruits.style.backgroundColor = "yellow";
 })
 
-console.log(foods);
+console.log(fruits);
