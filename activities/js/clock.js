@@ -8,8 +8,7 @@ function updateClock(){
 
     const timeString = `${hr}:${minutes}:${sec} ${meridiem}`; 
     document.getElementById('clock').textContent = timeString;
-    
-}
 
+}
 updateClock();
 setInterval(updateClock,1000);
