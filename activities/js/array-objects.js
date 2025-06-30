@@ -6,3 +6,7 @@ const fruits = [
 ];
 fruits.push({name:"mema", color: "mema"} );
 console.log(fruits[4].name,fruits[4].color);
+
+for( i in fruits){
+    console.log(fruits[i]);
+}
