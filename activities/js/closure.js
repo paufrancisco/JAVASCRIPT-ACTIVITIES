@@ -23,5 +23,5 @@ counter.increment();
 counter.increment();
 counter.increment();
 counter.increment(); 
-
+counter.increment(); 
 console.log(`The current count is ${counter.getCount()}`);
