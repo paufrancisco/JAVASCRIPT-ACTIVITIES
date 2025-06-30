@@ -32,5 +32,5 @@ const people = [{name: "Spongbob", age:30, gpa: 3.0},
                 {name: "Sandy", age:27, gpa: 4.0}
 ]
 
-people.sort((a,b) => a.gpa - b.gpa);
+people.sort((a,b) => a.age - b.age);
 console.log(people);
