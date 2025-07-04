@@ -29,3 +29,5 @@ newButton.textContent = "Button 1";
 newButton.classList = "myButton";
 
 document.body.appendChild(newButton);
+buttons = document.querySelectorAll('.myButton'); 
+console.log(buttons);
