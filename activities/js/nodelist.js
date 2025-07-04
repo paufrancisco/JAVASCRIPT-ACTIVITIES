@@ -24,3 +24,8 @@ buttons.forEach(button =>{
     });
 });
 
+const newButton = document.createElement("button");
+newButton.textContent = "Button 1";
+newButton.classList = "myButton";
+
+document.body.appendChild(newButton);
