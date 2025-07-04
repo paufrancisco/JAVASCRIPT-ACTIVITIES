@@ -13,7 +13,14 @@ buttons.forEach(button =>{
 });
 
 buttons.forEach(button =>{
-    button.addEventListener("click", event=>{
-        event.target.style.backgroundColor = "red";
+    button.addEventListener("mouseover", event=>{
+        event.target.style.backgroundColor = "blue";
     });
 });
+
+buttons.forEach(button =>{
+    button.addEventListener("mouseout", event=>{
+        event.target.style.backgroundColor = "black";
+    });
+});
+
