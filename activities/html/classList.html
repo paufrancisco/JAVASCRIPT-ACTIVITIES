@@ -4,20 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Class List</title>
-        <style>
-
-
-
-
-            #myButton{
+        <style> 
+            .myButtons{
                 font-size: 4rem;
                 margin: 10px;
                 border: none;
                 border-radius: none;
                 border-radius: 5px; 
                 color: black;
-            }
-
+            } 
             .enabled{
                 background-color: lightblue;
                 color: white;
@@ -27,20 +22,18 @@
                 box-shadow: 0 0 10px black ;
             }
             .disabled{
-                background-color: grey;
-                color: grey; 
-            }
-
-
+                background-color: red;
+                color: grey;  
+            } 
         </style>
     </head>
 
 
     <body>
-        <button id="myButton">
-            My Button
-        </button>
-        <h1 id="h1">wala lang</h1>
+        <button class="myButtons">Button 1</button>
+        <button class="myButtons">Button 2</button>
+        <button class="myButtons">Button 3</button>
+        <button class="myButtons">Button 4</button> 
     </body>
     <script type="module" src="../js/classList.js"></script>
 </html>
