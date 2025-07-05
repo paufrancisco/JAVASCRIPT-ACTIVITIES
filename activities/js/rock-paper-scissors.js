@@ -19,12 +19,21 @@ function playGame(playerChoice){
      playerChoice === 'scissors' && computerChoice === 'paper'
     ) 
     {
-        result = 'you win';
+        result = 'You win';
     }else{
-        result = 'you lose';
+        result = 'You lose';
     }
 
     playerDisplay.textContent = `Player: ${playerChoice}`;
     computerDisplay.textContent = `Computer: ${computerChoice}`;
     resultDisplay.textContent = result; 
+
+    switch(result){
+        case "You win":
+            resultDisplay.classList.add('greenText');
+            break;
+        case "You lose":
+            resultDisplay.classList.add('redText');
+            break;
+    } 
 }
