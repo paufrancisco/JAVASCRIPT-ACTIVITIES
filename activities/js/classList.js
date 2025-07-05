@@ -24,3 +24,13 @@ myButton.addEventListener("click", event=>{
     } 
 });
 
+myH1.addEventListener("click", event=>{
+
+
+    if(event.target.classList.contains('disabled')){
+        event.target.textContent += "mema";
+    }
+    else{
+        event.target.classList.replace('enabled','disabled');
+    } 
+});
