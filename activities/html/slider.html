@@ -1,21 +1,45 @@
-<!DOCTYPE html>
+b<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Slider</title>
+        <style>
+            .slider{
+                position: relative;
+                width: 100%;
+                margin: auto;
+                overflow: hidden;
+            }
+            .slider img{
+                width: 100%;
+                display: none;
+            }
+            img.displaySlide{
+                display: block;
+
+            }
+
+            
+
+
+
+
+
+        </style>
     </head>
     <body>
         <div class="slider">
             <div class="slides"> 
-                <img src="slide" alt="img.jpg"> 
+                <img class="slide" alt="img1.jpg" src="../images/car1.jpg"> 
+                <img class="slide" alt="img2.jpg" src="../images/car2.jpg"> 
+                <img class="slide" alt="img3.jpg" src="../images/car3.jpg"> 
             </div>
-        </div>
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button> 
 
 
-
-
-
+        </div> 
 
     </body>
     <script src="../js/slider.js"></script>
