@@ -1,5 +1,5 @@
 const myButton = document.getElementById('myButton');
-
+const myH1 = document.getElementById('h1');
 // myButton.classList.add("enabled");
 // myButton.classList.remove("enabled");
 
@@ -10,10 +10,17 @@ const myButton = document.getElementById('myButton');
 // myButton.addEventListener("mouseout", event=>{
 //     event.target.classList.remove('hover');
 // })
-
+myH1.classList.add('enabled');
 myButton.classList.add('enabled');
 
 myButton.addEventListener("click", event=>{
-    event.target.classList.replace('enabled','disabled');
-})
+
+
+    if(event.target.classList.contains('disabled')){
+        event.target.textContent += "mema";
+    }
+    else{
+        event.target.classList.replace('enabled','disabled');
+    } 
+});
 
